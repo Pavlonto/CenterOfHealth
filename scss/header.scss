@@ -1,0 +1,58 @@
+.header {
+  height: 80px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  &__logo {
+    display: block;
+    background: url("../images/icons/logo.svg") no-repeat;
+    width: 33px;
+    height: 40px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    margin-right: 30px;
+  }
+
+  &__link a {
+    color: #333333;
+  }
+
+  &__link:last-child {
+    margin-right: 0;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__address {
+    margin-right: 30px;
+  }
+
+  &__address::before {
+    content: "";
+    background: url(../images/icons/map-point.svg) no-repeat;
+    display: inline-block;
+    width: 12px;
+    height: 15px;
+    margin-right: 9px;
+    position: relative;
+    top: 2px;
+  }
+
+  &__button{
+    border-radius: 5px;
+    background-color: #D3B288;
+    color: #FFFFFF;
+    padding: 8px 15px;
+  }
+}

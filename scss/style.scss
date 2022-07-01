@@ -15,8 +15,28 @@ body {
 }
 
 ._container {
-  max-width: 1297px;
+  max-width: 1317px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-block {
+  margin: 150px auto;
+}
+
+.title {
+  color: #D3B288;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.4;
+}
+
+.text {
+  line-height: 20px;
+}
+
+.button {
+  border-radius: 5px;
 }
 
 @import "header";

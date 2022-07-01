@@ -3,21 +3,45 @@
     color: #FFFFFF;
     background: #D3B288;
     padding: 30px 0;
-    .footer__first-row {
+  }
+
+  &__first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 30px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__numbers {
+    display: flex;
+  }
+
+  @media (max-width: 1025px) {
+    &__numbers {
       display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #FFFFFF;
-      padding-bottom: 30px;
+      flex-direction: column;
     }
   }
 
   &__number {
+    display: inline-block;
+    margin-right: 20px;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
+    white-space: nowrap;
+  }
+
+  &__number:last-child {
+    margin-right: 0;
   }
 
   .footer__address {
+    white-space: nowrap;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
@@ -25,9 +49,11 @@
   }
 
   &__button {
+    justify-self: center;
+    align-self: center;
     color: #D3B288;
     padding: 8px 15px;
-    border-radius: 5px;
+    white-space: nowrap;
   }
 
   &__last-row {
@@ -35,6 +61,13 @@
     justify-content: space-between;
     margin-top: 30px;
 
+  @media (max-width: 1025px) {
+    display: block;
+    &__numbers {
+      display: flex;
+      flex-direction: column;
+    }
+  }
     .item__title {
       font-weight: 500;
       font-size: 18px;
@@ -68,6 +101,10 @@
     flex: 0 0 34%;
     border: 3px solid #FFFFFF;
 
+    @media (max-width: 1025px) {
+      margin-top: 30px;
+    }
+
     .working-hours__body {
       padding: 40px 70px;
     }
@@ -88,9 +125,6 @@
   .info__string {
     display: flex;
     justify-content: space-between;
-    .string1__item {
-
-    }
   }
 
   .string2 {
@@ -106,7 +140,7 @@
     .footer__bottom-row {
       display: flex;
       justify-content: space-between;
-      padding: 20px 0;
+      padding: 20px 20px;
       .footer__bottom-item {
         line-height: 20px;
         opacity: 0.5;

@@ -11,20 +11,14 @@
     align-items: center;
     border-bottom: 1px solid #FFFFFF;
     padding-bottom: 30px;
-    @media (max-width: 768px) {
-      flex-wrap: wrap;
+    @media (max-width: 850px) {
+      display: block;
     }
   }
 
   &__numbers {
-    display: flex;
-  }
-
-  @media (max-width: 1025px) {
-    &__numbers {
-      display: flex;
-      flex-direction: column;
-    }
+    display: inline-block;
+    margin-right: 20px;
   }
 
   &__number {
@@ -41,16 +35,16 @@
   }
 
   .footer__address {
+    display: inline-block;
     white-space: nowrap;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
     border-bottom: 2px dashed #FFFFFF;
+    margin-right: 20px;
   }
 
   &__button {
-    justify-self: center;
-    align-self: center;
     color: #D3B288;
     padding: 8px 15px;
     white-space: nowrap;
